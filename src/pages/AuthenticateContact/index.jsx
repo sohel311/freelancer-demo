@@ -1,9 +1,11 @@
 import SignUpBg from "../../assets/images/signup-bg.png";
 import OtpInput from "react-otp-input";
 import "./authenticateContact.scss";
+import CustomModal from "../../components/CustomModal";
 
 const AuthenticateContact = ({ handleNavigate }) => {
   return (
+    <CustomModal overlayClass={"responsive-overlay"} className="signup-pop">
     <div className="otp">
       <div className="otp_left">
         <div className="otp_left_title">Email Confirmation</div>
@@ -28,6 +30,7 @@ const AuthenticateContact = ({ handleNavigate }) => {
         <img src={SignUpBg} />
       </div>
     </div>
+    </CustomModal>
   );
 };
 

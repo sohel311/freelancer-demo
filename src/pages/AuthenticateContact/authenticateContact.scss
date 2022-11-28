@@ -4,6 +4,19 @@
   width: 100%;
   height: 100%;
   display: flex;
+
+  @media only screen and (max-width: 568px) {
+    display: block;
+    padding: 23px 27px;
+    overflow-y: scroll;
+    max-width: 420px;
+    border-radius: 20px;
+    background-color: #e7fffb;
+    width: 100%;
+    margin: 0 20px;
+    height: fit-content;
+  }
+
   &_left {
     padding: 100px 150px 0 150px;
     @media only screen and (max-width: 1201px) {
@@ -12,6 +25,11 @@
     @media only screen and (max-width: 1068px) {
       margin: 0 auto;
     }
+
+    @media only screen and (max-width: 568px) {
+      padding: 0;
+    }
+
     &_title {
       font-family: "Poppins";
       font-style: normal;
@@ -20,6 +38,10 @@
       line-height: 45px;
       color: #000000;
       margin-bottom: 26px;
+      @media only screen and (max-width: 568px) {
+        font-size: 24px;
+        line-height: 36px;
+      }
     }
     &_sub-title {
       font-family: "Poppins";
@@ -30,10 +52,17 @@
       margin-bottom: 25px;
       color: #474747;
       max-width: 500px;
+      @media only screen and (max-width: 568px) {
+        font-size: 18px;
+        line-height: 27px;
+      }
     }
     &_form-wrapper {
       &_form-item {
         margin-bottom: 106px;
+        @media only screen and (max-width: 568px) {
+          margin-bottom: 65px;
+        }
         label {
           font-family: "Poppins";
           font-style: normal;
@@ -42,16 +71,46 @@
           line-height: 27px;
           color: #000000;
         }
+
+        div {
+          flex-wrap: wrap;
+            column-gap: 6px;
+        }
+
         &_otp {
           margin-top: 18px;
           margin-right: 28px;
+          @media only screen and (max-width: 568px) {
+            margin-top: 6px;
+            margin-right: 0px;
+          }
           input {
-            background:$color-white;
-            border: 1px solid $primary-color-dark;
+            background: $color-white;
+            border: 1px solid $primary-color-dark !important;
             box-shadow: 3px 18px 37px 10px rgba(165, 165, 165, 0.2);
             border-radius: 15px;
             width: 60px !important;
             height: 61px;
+            @media only screen and (max-width: 568px) {
+              width: 51px !important;
+              height: 51px;
+              border: 1.5px solid #07a189 !important;
+              box-shadow: 3px 18px 37px 10px rgba(165, 165, 165, 0.2);
+              border-radius: 11px;
+            }
+            @media only screen and (max-width: 568px) {
+              width: 51px !important;
+              height: 51px;
+              border: 1.5px solid #07a189 !important;
+            }
+            @media only screen and (max-width: 468px) {
+              width: 47px !important;
+              height: 47px;
+            }
+            @media only screen and (max-width: 368px) {
+              width: 37px !important;
+              height: 37px;
+            }
           }
         }
       }
