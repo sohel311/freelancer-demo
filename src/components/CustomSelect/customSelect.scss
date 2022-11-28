@@ -1,0 +1,55 @@
+@import "../../assets/scss/mixins";
+
+.freelancer-select {
+  label {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6c6c6c;
+    margin-bottom: 5px;
+    margin-left: 15px;
+  }
+  &_wrapper-icon {
+    position: relative;
+    .suffix {
+      position: absolute;
+      z-index: 2;
+      margin: 16px 12px;
+    }
+    .custom-select {
+      &__control {
+        position: relative;
+        background: $color-white;
+        border: 1px solid $primary-color-dark;
+        box-shadow: 3px 18px 37px 10px rgba(165, 165, 165, 0.2);
+        border-radius: 10px;       
+      }
+      &__placeholder {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ccd8d6;
+      }
+      &__value-container {
+        padding: 13px 0px 13px 50px;
+      }
+      &__input-container {
+        padding: 0;
+        margin: 0;
+      }
+      &__indicators {
+        min-width: 40px;
+        svg {
+          fill:#07A189;
+        }
+      }
+      &__indicator-separator {
+        display: none;
+      }
+    }
+  }
+}

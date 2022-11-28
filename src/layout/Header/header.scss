@@ -1,0 +1,205 @@
+@import "../../assets//scss/mixins";
+
+header {
+    width: 100%;
+    max-width: 1440px;
+    padding: 27px 50px 27px 60px;
+    margin: 0 auto;
+    @media only screen and (max-width: 1068px) {
+      padding: 16px 24px;
+    }
+    .container {
+      display: flex;
+      background-color: $primary-color;
+      height: fit-content;
+      justify-content: space-between;
+      left: 0;
+      transition: all 0.3s;
+      z-index: 2;
+      padding: 0;
+      &_left {
+        display: flex;
+        align-items: center;
+        &_logo {
+          width: 100%;
+          height: 100%;
+          max-width: 162px;
+          max-height: 70px;
+          background: $primary-color-dark;
+          border-radius: 15px;
+          margin-right: 38px;
+          cursor: pointer;
+          @media only screen and (max-width: 568px) {
+            max-width: fit-content;
+            font-size: 24px;
+            line-height: 36px;
+          }
+          div {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 45px;
+            color: $color-white;
+            padding: 12px 44px 13px 45px;
+            @media only screen and (max-width: 1068px) {
+              padding: 8px 35px 8px 35px;
+              font-size: 24px;
+            }
+            @media only screen and (max-width: 568px) {
+              padding: 4px 30px;
+              font-size: 24px;
+            }
+          }
+        }
+      }
+      &_right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        // @media only screen and (max-width: 1068px) {
+        //   padding: 16px 24px;
+        //   display: none;
+        // }
+
+        &_search {
+          display: flex;
+          width: 100%;
+          max-width: 562px;
+          @media only screen and (max-width: 1201px) {
+            display: none;
+          }
+          input {
+            box-sizing: border-box;
+            background: $color-white;
+            border: 1px solid $primary-color-dark;
+            box-shadow: 3px 18px 37px 10px rgba(165, 165, 165, 0.2);
+            border-radius: 15px;
+            padding: 15px 58px 15px 61px;
+            width: 100%;
+            max-width: 471px;
+            max-height: 51px;
+            margin-right: 13px;
+            font-family: Poppins;
+            &::placeholder {
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 21px;
+              color: rgba(134, 134, 134, 0.31);
+            }
+            &:focus-visible {
+              outline: none;
+            }
+          }
+          button {
+            background: $color-black;
+            box-shadow: 3px 18px 37px 10px rgba(165, 165, 165, 0.2);
+            border-radius: 15px;
+            padding: 13px 33px;
+            border: none;
+            font-family: Poppins;
+            &:hover {
+              background: $primary-color-dark;
+            }
+          }
+        }
+
+
+        &_nav {
+          margin: 0px 42px 0px 35px;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          max-width: fit-content;
+          @media only screen and (max-width: 1068px) {
+            margin: 0px 22px;
+          }
+          @media only screen and (max-width: 768px) {
+           display: none;
+          }
+          span {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: $color-black;
+            cursor: pointer;
+            &:first-child {
+              margin-right: 18px;
+            }
+            &:hover {
+              color: $primary-color-dark;
+            }
+            @media only screen and (max-width: 1068px) {
+              &:first-child {
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+        &_icons {
+          display: flex;
+          @media only screen and (max-width: 768px) {
+            display: none;
+           }
+          &_icon {
+            position: relative;
+            cursor: pointer;
+            &:first-child {
+              margin-right: 40px;
+            }
+            span {
+              background: #da0028;
+              padding: 0px 5.67px;
+              border-radius: 50%;
+              font-family: Poppins;
+              font-style: normal;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 18px;
+              color: $color-white;
+              position: absolute;
+              left: 20px;
+              bottom: 20px;
+            }
+          }
+        }
+        &_menu {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          @media only screen and (max-width: 768px) {
+            display: none;
+           }
+          &_avatar {
+            background: rgba(7, 162, 137, 0.26);
+            border-radius: 10px;
+            height: 100%;
+            width: 100%;
+            max-height: 53px;
+            min-width: 53px;
+            max-width: 53px;
+            margin-right: 15px;
+            margin-left: 31px;
+          }
+        }
+      }
+      &_right-mobile {
+        display: none;
+        @media only screen and (max-width: 768px) {
+          display: flex;
+          align-items: center;
+          margin-left: 15px;
+        }
+        svg {
+          cursor: pointer;
+        }
+      }
+    }
+  }

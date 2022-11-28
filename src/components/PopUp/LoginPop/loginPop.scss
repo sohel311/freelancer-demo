@@ -1,0 +1,124 @@
+.auth-wrapper {
+  max-width: 645px;
+  border-radius: 20px;
+  background-color: #E7FFFB;
+  width: 100%;
+  margin: 0 20px;
+  &_header {
+    padding: 20px 45px;
+    border-bottom: 1px solid #b3b3b3;
+    h1 {
+      margin: 0;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 45px;
+      /* identical to box height */
+      color: #000000;
+    }
+    @media only screen and (max-width: 468px) {
+      padding: 20px 27px;
+      h1 {
+        font-size: 24px;
+      }
+    }
+  }
+  &_form {
+    padding: 20px 27px 45px 27px;
+    width: 100%;
+    max-width: 466px;
+    margin: 0 auto;
+    h2 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 36px;
+      /* identical to box height */
+      color: #000000;
+      @media only screen and (max-width: 468px) {
+        font-size: 20px;
+      }
+    }
+    &_forgot-text {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: #6c6c6c;
+      width: 100%;
+      text-align: right;
+      margin-bottom: 34px;
+      @media only screen and (max-width: 468px) {
+        font-size: 16px;
+      }
+    }
+    &_item {
+      &_input {
+        input {
+          width: 100%;
+          max-width: 466px;
+        }
+      }
+    }
+    button {
+      background: #1e1e1e;
+      border: 1px solid #1e1e1e;
+      border-radius: 10px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      height: 53px;
+      color: #ffffff;
+      max-width: 491px;
+      width: 100%;
+    }
+  }
+  &_divider {
+    display: flex;
+    align-items: center;
+    hr {
+      width: 100%;
+    }
+    span {
+      padding: 0 13px;
+      border-color: #ccd8d6;
+    }
+  }
+  &_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 31px 0 38px 0;
+    p {
+      margin: 0;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      /* identical to box height */
+      color: #b1b1b1;
+      margin-right: 7px;
+      @media only screen and (max-width: 468px) {
+        font-size: 16px;
+      }
+    }
+    b {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 33px;
+      /* identical to box height */
+      color: #0ab79b;
+      @media only screen and (max-width: 468px) {
+        font-size: 18px;
+      }
+    }
+  }
+}

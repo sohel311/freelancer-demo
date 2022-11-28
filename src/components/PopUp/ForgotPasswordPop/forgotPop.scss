@@ -1,0 +1,65 @@
+.forgot-wrapper {
+  max-width: 645px;
+  border-radius: 20px;
+  background-color: #E7FFFB;
+  width: 100%;
+  margin: 0 20px;
+  &_header {
+    padding: 20px 45px;
+    border-bottom: 1px solid #b3b3b3;
+    h1 {
+      margin: 0;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 45px;
+      /* identical to box height */
+      color: #000000;
+    }
+    @media only screen and (max-width: 468px) {
+      padding: 20px 27px;
+      h1 {
+        font-size: 20px;
+      }
+    }
+  }
+  &_form {
+    padding: 20px 27px 45px 27px;
+    width: 100%;
+    max-width: 466px;
+    margin: 0 auto;
+    &_desc {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: #6C6C6C;
+      margin-bottom: 32px;
+    }
+    &_item {
+      &_input {
+        input {
+          width: 100%;
+          max-width: 466px;
+        }
+      }
+    }
+    button {
+      background: #1e1e1e;
+      border: 1px solid #1e1e1e;
+      border-radius: 10px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      height: 53px;
+      color: #ffffff;
+      max-width: 491px;
+      width: 100%;
+      margin-top: 61px;
+    }
+  }
+}

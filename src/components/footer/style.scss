@@ -1,0 +1,129 @@
+@import '../../assets/scss/mixins';
+
+footer {
+    background-color: $color-light;
+    font-family: 'Raleway', sans-serif;
+    padding: 50px 0;
+
+    .container {
+        > div {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .footer_logo_wrapper {
+            width: 20%;
+
+            .footer_logo a {
+                width: 100px;
+                height: 44px;
+                background: $primary-color-dark;
+                display: block;
+                text-align: center;
+                line-height: 44px;
+                text-decoration: none;
+                border-radius: $radius-lg;
+                font-size: $fz-18;
+                color: $color-white;
+                margin-bottom: 35px;
+            }
+
+            p {
+                font-size: $fz-16;
+                line-height: 1.5;
+                color: $color-text-gray;
+            }
+        }
+
+        .footer_menu_wrapper {
+            width: 80%;
+
+            .footer_menu {
+                display: inline-block;
+                vertical-align: top;
+                width: calc(100% / 4);
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+
+                    li {
+                        margin-bottom: 20px;
+
+                        a {
+                            font-size: $fz-16;
+                            line-height: 1.5;
+                            color: $color-text-gray;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+
+                .social_icons {
+                    a {
+                        display: inline-block;
+                        margin-right: 15px;
+                        
+                        svg {
+                            width: 42px;
+                            height: 42px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        
+
+        h3 {
+            font-size: $fz-20;
+            color: #000;
+            margin-bottom: 20px;
+
+        }
+    }
+}
+
+
+@media(max-width: 991px){
+    footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        .container {
+            padding-left: 30px;
+            padding-right: 30px;
+            .footer_logo_wrapper {
+                width: 100%;
+            }
+
+            .footer_menu_wrapper {
+                width: 100%;
+                .footer_menu {
+                    width: calc(100% / 2) !important;
+                    margin-top: 30px;
+                }
+            }
+
+            
+        }
+    } 
+}
+
+
+@media(max-width: 576px){
+    footer{
+        display: block !important;
+        .container {
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+            .footer_menu_wrapper .footer_menu .social_icons a svg {
+                width: 32px !important;
+                height: 32px !important;
+            }
+        }
+    } 
+}

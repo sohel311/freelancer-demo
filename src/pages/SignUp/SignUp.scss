@@ -1,0 +1,164 @@
+@import "../../assets/scss/mixins";
+
+.signup {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  &_left_wrapper {
+    max-width: 506px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 568px) {
+    display: block;
+    padding: 23px 27px;
+    overflow-y: scroll;
+    max-width: 420px;
+    border-radius: 20px;
+    background-color: #E7FFFB;
+    width: 100%;
+    margin: 0 20px;
+  }
+
+  &_left {
+    padding: 36px 0 20px 0;
+    width: 60%;
+    overflow: auto;
+    @media only screen and (max-width: 1201px) {
+    //  padding: 36px 0 0 40px;
+    width: 100%;
+    }
+    @media only screen and (max-width: 1068px) {
+      margin: 0 auto;
+    }
+    @media only screen and (max-width: 568px) {
+      padding: 0;
+    }
+    &_title {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 45px;
+      color: #000000;
+      margin-bottom: 26px;
+    }
+    &_form-wrapper {
+      &_item {
+        &_multiple {
+          display: flex;
+          margin-bottom: 15px;
+          @media only screen and (max-width: 568px) {
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 0;
+            .freelancer-input_wrapper-icon {
+              max-width: 491px;
+              svg {
+                margin: 14px 12px;
+              }
+              input {
+                width: 100%;
+                max-width: 491px;
+              }
+              input[type="password"] {
+                &::placeholder {
+                }
+              }
+            }
+          }
+          &_form-item {
+            margin-right: 16px;
+            @media only screen and (max-width: 568px) {
+              margin-right: 0;
+              margin-bottom: 15px;
+            }
+          }
+          &_form-item-radio {
+            margin-right: 27px;
+            @media only screen and (max-width: 568px) {
+              margin-right: 0;
+              margin-bottom: 15px;
+            }
+          }
+          &_form-item-password {
+            margin-right: 16px;
+            @media only screen and (max-width: 568px) {
+              margin-right: 0;
+              margin-bottom: 15px;
+            }
+            .freelancer-input_wrapper-icon {
+              input {
+                &::placeholder {
+                }
+              }
+            }
+          }
+        }
+        &_single {
+          margin-bottom: 15px;
+          .freelancer-input_wrapper-icon {
+            max-width: 491px;
+            svg {
+              margin: 14px 12px;
+            }
+            input {
+              width: 100%;
+              max-width: 491px;
+            }
+            input[type="password"] {
+              &::placeholder {
+              }
+            }
+          }
+          .freelancer-select_wrapper-icon {
+            max-width: 491px;
+          }
+        }
+      }
+      &_terms {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        color: #6c6c6c;
+        margin-bottom: 29px;
+      }
+      &_submit-btn {
+        background: #1e1e1e;
+        border: 1px solid #1e1e1e;
+        border-radius: 10px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        height: 53px;
+        color: #ffffff;
+        max-width: 491px;
+        width: 100%;
+      }
+    }
+  }
+  &_right {
+    height: 100%;
+    width: 100%;
+    max-width: 40%;
+    /* position: fixed; */
+    right: 0;
+    background-color: #000;
+    @media only screen and (max-width: 1068px) {
+      display: none;
+    }
+    img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      opacity: 0.5;
+      display: block;
+    }
+  }
+}
